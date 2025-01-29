@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <h1>Logo</h1>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text">
+                <h1> Hello!! i'm <br><span>Laxmipriya</span><br></h1>
+                <h4>I'm a frontend developer</h4>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div id="about">
+   <div class="container">
+    <div class="row">
+        <div class="aboutcol1">
+            <img src="images/mamali-pic.jpg">
+        </div>
+        <div class="aboutcol2">
+            <h1 class="title">About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam dignissimos inventore aliquam voluptas dolore mollitia nulla doloremque! Distinctio impedit aliquam consequatur quam cupiditate? Esse ipsa impedit totam exercitationem itaque!
+            Ab aliquam quisquam at ut explicabo error! Amet magnam qui est, soluta omnis ex tenetur asperiores, deserunt aperiam, in odio voluptas officia! A modi minus ipsam alias saepe autem numquam.
+            Aperiam est ratione, vero ullam sed aliquam fuga ex enim architecto quo id asperiores commodi molestiae unde. Ab asperiores non animi, minima ipsa praesentium! Esse illum animi dicta iusto voluptates.
+            Numquam, amet. Laborum, quasi. Cupiditate repudiandae culpa dolorum quas veniam omnis, dignissimos consectetur id vitae iste amet, laborum similique molestias molestiae tenetur placeat quae eius sequi incidunt asperiores animi! Eveniet.</p>
+            <div class="tab">
+                <p class="links activelink" onclick="opentab('skills')">Skills</p>
+                <p class="links"onclick="opentab('education')">Educational Qualification</p>
+            </div>
+            <div class="content activetab" id="skills">
+                <ul>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>Javascript</span></li>
+                    <li><span>React Js</span></li> 
+                    <li><span>Node Js</span></li>
+                    <li><span>MongoDb</span></li>
+                    <li><span>SQL</span></li>
+                </ul>
+               
+            </div>
+            <div class="content" id="education">
+                <ul>
+                    <li>Matriculation from G.C.Girls HIgh School,orali<span> 2019</span></li>
+                    <li>Intermediate from Bhadrak Autonomous College,Bhadrak<span>  2021</span></li>
+                    <li>B.Sc from Bhadrak Autonomous College,Bhadrak<span>2024</span></li>
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+   </div>
+   
+    
+</div>
+<div id="projects">
+    <div class="container">
+        <h1 class="title">Projects</h1>
+        <div class="projectlist">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Milk App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, quae qui unde consequuntur sapiente, vero cumque commodi accusamus fugit reprehenderit rerum illo ipsa ut, amet error sint? Facilis, incidunt necessitatibus!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <h2>Facebook</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, quae qui unde consequuntur sapiente, vero cumque commodi accusamus fugit reprehenderit rerum illo ipsa ut, amet error sint? Facilis, incidunt necessitatibus!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <h2>Instagram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, quae qui unde consequuntur sapiente, vero cumque commodi accusamus fugit reprehenderit rerum illo ipsa ut, amet error sint? Facilis, incidunt necessitatibus!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1 class="title">Contact Me</h1>
+                <p><i class="fa-solid fa-share"></i> Email Id : lojha079@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Contact Number : 9692901594</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            <a  href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                 <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Laxmipriya || <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+    <script>
+        var links=document.getElementsByClassName("link");
+        var contents=document.getElementsByClassName("content");
+        function opentab(tabname){
+            for(link of links){
+                link.classList.remove("activelink");
+            }
+            for(content of contents){
+                content.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
